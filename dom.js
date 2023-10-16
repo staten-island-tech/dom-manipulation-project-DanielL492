@@ -2,7 +2,7 @@
 console.log(form)*/
 const DOMSelectors = {
     form: document.querySelector("#form"),
-    firstName: document.querySelector(".first-name"),
+    firstName: document.querySelector(".character-name"),
     h2s: document.querySelectorAll("h2"),
 }
 

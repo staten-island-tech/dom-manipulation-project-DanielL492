@@ -3,18 +3,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
-    <title>Document</title>
+    <title>DOM Manipulation</title>
 </head>
 <body>
-    <h1 class="title">Video Game Character Generator</h1>
+    <h1 class="title">Video Game Character Card Generator</h1>
     <form action="" id="form">
-        <label for="firstName">Enter First Name</label>
-        <input type="text" name="firstName" class="first-name" />
+        <label for="CharacterName">Enter Character Name</label>
+        <input type="text" name="CharacterName" class="Character-name" />
         <input type="submit" value="Click to Submit" id="submit" />
     </form>
-    <h2></h2>
-    <h2></h2>
-    <h2></h2>
+    <div class="charactercard">
+        <h2 class="name"></h2>
+        <h3 class="game"></h3>
+    </div>
     <script src="dom.js"></script>
 </body>
 </html>
