@@ -10,6 +10,15 @@ const DOMSelectors = {
     points:document.querySelectorAll(".point"),
 }
 
+function makeAlbum() {
+
+}
+function addCard(Album) {
+    //insertAdjacentHTML() look up
+    //backticks allow u to input a string and insert variable in adjacent
+    // html using ${} ex(Album.name) use .value after domselector variable name
+}
+
 function titleedit(headin, bruh) {
     headin.style.fontSize = "50px";
     headin.style.backgroundColor = "green";
@@ -18,12 +27,19 @@ function titleedit(headin, bruh) {
 
 DOMSelectors.button.addEventListener("click", function(){
     titleedit(DOMSelectors.title, DOMSelectors.random)
+    /*const album = makealbum()
+    addCard()
+    clearfields()
+    addremovebuttons*/
 })
 
+
 function changelist() {
+    let pointbruh = 2;
     DOMSelectors.points.forEach((poin) => {
         poin.addEventListener("click", function() {
-            poin.textContent = "hello";
+            poin.textContent = `hello ${pointbruh}`;
+            pointbruh++;
         });
     });
 }
