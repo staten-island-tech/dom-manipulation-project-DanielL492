@@ -7,22 +7,16 @@
 </head>
 <body>
     <h1 class="title">Video Game Character Card Generator</h1>
-    <h2 class="random">thisisgoing to be something</h2>
-    <button type="button" id="btn">Click!</button>
     <form action="" id="form">
-        <label for="CharacterName">Enter Character Name</label>
-        <input type="text" name="CharacterName" class="character-name" />
+        <label for="inputname">Enter Character Name:</label>
+        <input type="text" id="inputname" /> <br> <!-- br Creates indent -->
+        <label for="inputgame">Enter that Game Character Originated from:</label>
+        <input type="text" id="inputgame" /> <br>
+        <label for="imglink">Enter img link of Character:</label>
+        <input type="text" id="inputimg" /> <br>
         <input type="submit" value="Click to Submit" id="submit" />
+<!--         <input type="button" value="X" id="removebtn"> -->
     </form>
-    <div class="charactercard">
-        <h2 class="name"></h2>
-        <h3 class="game"></h3>
-    </div>
-    <ul>
-        <li class="point">1</li>
-        <li class="point">2</li>
-        <li class="point">3</li>
-    </ul>
     <script src="dom.js"></script>
 </body>
 </html>
