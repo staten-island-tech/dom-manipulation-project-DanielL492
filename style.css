@@ -1,3 +1,24 @@
+body {
+    background-color: rgb(16, 148, 75);
+}
 .title {
     text-align: center;
+    background-color: rgba(30, 94, 177, 0.753);
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.inputs {
+    text-align: center;
+}
+.input1 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.input2 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.input3 {
+    margin-top: 2%;
+    margin-bottom: 2%;
 }

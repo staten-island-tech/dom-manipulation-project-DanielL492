@@ -2,38 +2,41 @@ const DOMSelectors = {
     button: document.getElementById("submit"),
     form: document.getElementById("form"),
     title: document.querySelector(".title"),
-    input1: document.getElementById("inputname"),
-    input2: document.getElementById("inputgame"),
-    input3: document.getElementById("inputimg"),
+    inputname: document.getElementById("inputname"),
+    inputgame: document.getElementById("inputgame"),
+    inputimg: document.getElementById("inputimg"),
     container: document.getElementById("flexcontainer"),
 }
 
 function addcard() {
     DOMSelectors.container.insertAdjacentHTML("beforeend",
     `<div class="flexcontainer">
-        <h1 class="charname">${DOMSelectors.input1.value}</h1>
-        <h2 class="chargame">${DOMSelectors.input2.value}</h2>
-        <img src="${DOMSelectors.input3.value}" alt="Image" class="img"/>
+        <h1 class="name">${DOMSelectors.inputname.value}</h1>
+        <h2 class="game">${DOMSelectors.inputgame.value}</h2>
+        <img src="${DOMSelectors.inputimg.value}" alt="Image" class="img"/> <br>
         <button class="remove">Remove</button>
     </div>`
     );
 }
 
-/*function deletecard() {
-
+function deletecard() {
+    const removecontainer = document.querySelectorAll(".remove")
+    removecontainer.forEach(remove => remove.addEventListener("click", function() {
+        flexcontainer.remove();
+    }))
 }
 
 function clearinputs() {
     DOMSelectors.inputname.value = "";
     DOMSelectors.inputgame.value = "";
     DOMSelectors.inputimg.value = "";
-}*/
+}
 
 DOMSelectors.form.addEventListener("submit", function(event) {
     event.preventDefault();
     addcard();
-    //deletecard();
-    //clearinputs();
+    deletecard();
+    clearinputs();
 });
 
 
