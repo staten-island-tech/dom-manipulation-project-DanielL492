@@ -11,18 +11,20 @@ const DOMSelectors = {
 function addcard() {
     DOMSelectors.container.insertAdjacentHTML("beforeend",
     `<div class="flexcontainer">
-        <h1 class="name">${DOMSelectors.inputname.value}</h1>
-        <h2 class="game">${DOMSelectors.inputgame.value}</h2>
-        <img src="${DOMSelectors.inputimg.value}" alt="Image" class="img"/> <br>
-        <button class="remove">Remove</button>
+        <div class="card"> 
+            <h1 class="name">${DOMSelectors.inputname.value}</h1>
+            <h2 class="game">${DOMSelectors.inputgame.value}</h2>
+            <img src="${DOMSelectors.inputimg.value}" alt="Image" class="img"/> <br>
+            <button class="remove">Remove</button>
+        </div>
     </div>`
     );
 }
 
 function deletecard() {
     const removecontainer = document.querySelectorAll(".remove")
-    removecontainer.forEach(remove => remove.addEventListener("click", function() {
-        flexcontainer.remove();
+    removecontainer.forEach(remove => remove.addEventListener("click", function(find) {
+        find.target.parentElement.remove();
     }))
 }
 
