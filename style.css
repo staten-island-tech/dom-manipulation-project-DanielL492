@@ -40,17 +40,43 @@ body {
     width: 25vw;
     height: 50vh;
     font-size: 1rem;
-    border-radius: 20px;
+    border-radius: 15px;
     padding-bottom: 3vh;
     margin: 5vh;
-    margin-left: 0.25vw;
-    margin-right: 0.25vw;
+    margin-left: 60px;
+    margin-right: 60px;
     box-shadow: 10px 10px;
-    transition: all 0.3s;
 }
 
 .card-img {
     align-items: center;
-    width: 50vw;
-    height: 70vh;
+    width: 50%;
+    height: 55%;
 }
+
+@media screen and (max-width: 800px) {
+    .card {
+      width: 100%;
+      margin-left: 33vw;
+      margin-right: 33vw;
+      margin: 20vh;
+      height: 90%;
+    }
+    .title {
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) and (min-width: 801px) {
+    .card {
+      width: 65%;
+      margin-left: 2.5vw;
+      margin-right: 2.5vw;
+      margin: 10vh;
+      height: 65%;
+    }
+    .title {
+      font-size: 2rem;
+    }
+  }
+  
